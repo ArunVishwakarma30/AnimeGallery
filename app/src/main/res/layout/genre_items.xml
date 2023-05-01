@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/animeGenreContainer"
+    android:layout_width="185dp"
+    android:layout_height="100dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="5dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/genre_background_gradient"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/animeGenreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

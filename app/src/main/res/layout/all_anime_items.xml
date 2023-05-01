@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allAnimeContainer"
+    android:layout_width="185dp"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="6dp"
+    android:layout_marginHorizontal="8dp"
+    android:backgroundTint="#364345"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/allAnimeImg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/beyond_t_b" />
+
+            <TextView
+                android:id="@+id/allAnimeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:text="Anime Name "
+                android:textSize="12dp"
+                android:background="#364345"
+                android:textColor="#EBD9D9"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:weightSum="6">
+
+                <TextView
+                    android:id="@+id/AllAnimeEps"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:paddingLeft="6dp"
+                    android:text="Episodes : null "
+                    android:textColor="@color/white"
+                    android:background="#364345"
+                    />
+
+                <ImageView
+                    android:id="@+id/AllAnimeThreeDots"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#364345"
+                    android:src="@drawable/dots" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

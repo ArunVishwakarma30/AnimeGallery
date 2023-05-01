@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customTab"
+    android:background="@color/appColor"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/accountBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:tag="logIn"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_baseline_account_circle_24" />
+
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/accountBtn"
+            android:fontFamily="@font/berkshire_swash"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/seatchBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_baseline_search_24" />
+
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+
+

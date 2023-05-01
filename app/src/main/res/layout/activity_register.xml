@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:id="@+id/endActImg"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/multiply"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="143dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center"
+            android:text="Anime Gallary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etRegName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/title"
+            android:layout_marginHorizontal="30dp"
+
+            android:layout_marginTop="64dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter your Name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp" />
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etRegName"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter your email!"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp" />
+
+        <EditText
+            android:id="@+id/etRegPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etRegEmail"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Enter Password!"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp" />
+
+
+        <EditText
+            android:id="@+id/etCnfrmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/etRegPassword"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"
+            android:hint="Confirm Password!"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="30dp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_below="@id/etCnfrmPassword"
+            android:background="@drawable/button_border"
+            android:layout_marginTop="18dp"
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerBtn"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="17sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/goToLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text=" Log In"
+                android:layout_centerHorizontal="true"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
